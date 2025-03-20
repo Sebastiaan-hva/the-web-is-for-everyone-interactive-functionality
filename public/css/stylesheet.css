@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0; 
+}
+
+body{
+/* colors */
+ --color-primary: #FEFCFA;
+ --background-primary:#F6F5F5;
+ --accentcolor-primary:#000;
+    
+ /* text colors */
+ --textcolor-primary:#000;
+ --textcolor-secondary:#FFFFFF;
+
+ /* font */
+ --font-primary:'Parkinsans', sans-serif;
+ --font-weight-h2: 300;
+ font-family: var(--font-primary);
+ font-weight: var(--font-weight-h2);
+}
+
+h2{
+    font-size: clamp(2.5rem, 2.2941rem + 0.9412vw, 3rem);
+    line-break: auto;
+    margin-left:0.5em;
+    margin-bottom:1em;
+}
+
+ li{
+    list-style: none;
+ }

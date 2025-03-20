@@ -1,0 +1,65 @@
+{% render "partials/head.liquid" %}
+
+
+    <nav>
+        <img id="logo" src="/assets/logo-small.png" alt="go to home button">
+
+        <a href="/savedgifts" > <img id="logo-secondary" src="/assets/saved-icon.png" alt="go to saved button"> </a>
+
+        <a href="/" > <img id="logo-tertiary" src="/assets/profile-icon.png" alt="go to profile button"> </a>
+        
+    </nav>
+    <h2>Finding and sharing gift ideas</h2>
+    <article class="chatbox">
+
+    </article>
+
+
+   
+
+
+<div class="search-bar">
+    <img src="/assets/search-icon.png">
+    <input type="search" placeholder="Today I want a gift for..."/>
+</div>
+
+    <ul>
+    {% for product in data %}
+        <li>
+            {% comment %} <p>Slug: {{ product.slug }}</p>  {% endcomment %}
+            
+            {% comment %} <a href="/gifts/{{ product.slug }}">
+                <h2>{{ product.title }}</h2>
+            </a> {% endcomment %}
+
+           
+            {% if product.saved %}
+                <form method="POST" action="/savedgifts/{{ product.id }}">
+                    <button type="SUBMIT" class="grid-save"><img id="grid-save" src="/assets/save-icon.png" alt="save button"> 
+                    {% comment %} <button type="SUBMIT" name="giftId" class="" aria-label="Remove from list" value="{{ product.id }}">-</button> {% endcomment %}
+                </form>
+            {% else %}
+                <form method="POST" action="/savedgifts/{{ product.id }}">
+                     <button type="SUBMIT" class="grid-save"><img id="grid-save" src="/assets/save-icon.png" alt="save button"> 
+                    {% comment %} <button type="SUBMIT" class="" aria-label="Add to your List">+</button> {% endcomment %}
+                </form>
+            {% endif %}
+        </button>
+            <a href="/gifts/{{ product.slug }}"alt="{{ product.title }}">
+            <button class="grid-image" alt="{{ product.title }} button">
+                <img  src="{{ product.image }}" alt="{{ product.title }}">
+            </button>
+            </a>
+            <p>{{ product.name }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+    {% comment %} iets met position sticky toevoegen {% endcomment %}
+
+
+
+{% render "partials/foot.liquid" %}
+
+
+

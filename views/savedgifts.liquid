@@ -1,0 +1,26 @@
+{% render 'partials/head.liquid', title: '' %}
+
+<main>
+
+<a href="/">Back to home</a>
+
+    <section class="">
+        <h2>My Saved Gifts</h2>
+            {% for product in savedGifts | compact %}
+                <article class="">
+                    <a href="/gifts/{{ product.productDetails.id }}"alt="{{ product.title }}">
+                        <img src="{{ product.productDetails.image }}" alt="">
+                        <h3>{{ product.productDetails.name }}</h3>
+                        <p>{{ product.productDetails.spotter }}</p>
+                    </a>
+                </article>
+            {% else %}
+                <h2>No saved gifts yet</h2>
+                <p>Add some gifts and they will show up here</p>
+            {% endfor %}
+    </section>
+</main>
+
+
+
+{% render "partials/foot.liquid" %}
