@@ -84,3 +84,25 @@ li img{
     bottom: 1em;
     transform: translateX(-50%);
 }
+
+.loading{
+    animation-name:loading;
+    animation-duration:0.2s;
+    animation-iteration-count: 4;
+    @keyframes loading{
+        0%{
+            scale:1.0;
+        }
+        50%{
+            scale:1.1;
+        }
+        100%{
+            scale:1.0;
+        }
+    }
+    
+}
+
+.succes{
+    scale:1.5;
+}
