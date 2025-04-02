@@ -22,12 +22,15 @@ body{
 }
 
 h2{
-    font-size: clamp(2.5rem, 2.2941rem + 0.9412vw, 3rem);
+    font-size: clamp(2.0rem, 2.2941rem + 0.9412vw, 3rem);
     line-break: auto;
     margin-left:0.5em;
     margin-bottom:1em;
 }
 
+p{
+    font-size: clamp(0.9rem, 0.9rem, 1.5rem);
+}
  li{
     list-style: none;
  }
