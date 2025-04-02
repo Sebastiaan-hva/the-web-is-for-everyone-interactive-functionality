@@ -1,15 +1,24 @@
-{% render 'partials/head.liquid', title: '' %}
+{% render 'partials/head2.liquid', title: '' %}
 
 <main>
 
 <a href="/">Back to home</a>
 
-    <section class="">
+    <article>
+        <ul class="people-list">
+            <li class="saved-list-items"><img class="highlighted" src="/assets/Ellipse 172.jpg">Sebas</li>
+            <li class="saved-list-items"><img class="people" src="/assets/Ellipse 171.png">Nadia</li>
+            <li class="saved-list-items"><img class="people" src="/assets/Ellipse 173.jpg">Akiko</li>
+            <li class="saved-list-items"><img class="people" src="/assets/Ellipse 174.jpg">Viresh</li>
+            <li class="saved-list-items"><img class="people" src="/assets/Ellipse 175.jpg">Luuk</li>
+        </ul>
+    </article>
+    <section class="saved-list">
         <h2>My Saved Gifts</h2>
             {% for product in savedGifts | compact %}
-                <article class="">
+                <article class="border">
                     <a href="/gifts/{{ product.productDetails.id }}"alt="{{ product.title }}">
-                        <img src="{{ product.productDetails.image }}" alt="">
+                        <img class="saved-gift" src="{{ product.productDetails.image }}" alt="">
                         <h3>{{ product.productDetails.name }}</h3>
                         <p>{{ product.productDetails.spotter }}</p>
                     </a>

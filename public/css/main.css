@@ -1,6 +1,12 @@
 nav{
     display:flex;
     flex-direction: row;
+    position:fixed;
+    transform: translateY(-90%);
+    background-color: rgba(128, 128, 128, 0.182);
+    padding-right:2em;
+    margin-bottom:0;
+    
 }
 
 #logo{
@@ -29,14 +35,17 @@ ul{
     gap:0.5em;
     margin-left:1.2em;
     margin-right:1.2em;
-    
+}
+
+h2{
+    margin-top:2.5em;
 }
 
 
 li{
     display:grid;
     box-shadow: black 0 0 0 1px;
-    grid-template-rows: 8em 5em;
+    grid-template-rows: 8em 3em;
     grid-template-columns: 1px 99% 1px;
     p{
         grid-column-start:2;
@@ -93,7 +102,7 @@ li img{
 }
 
 .loading{
-    animation:loading 1s ease-in-out;
+    animation:loading 1.4s infinite ease-in-out;
     display: inline-block;
 }
 
