@@ -22,11 +22,12 @@ En er ervoor gezorgt dat je cadeau's kan toevoegen doormiddelvan een POST en de 
 In dit filmpje laat ik zien hoe je cadeau's toevoegt. Hierin laat ik al bijna alle functionaliteit zien.
 Je kan POSTen naar de server en dan zie je de client-site loading state totdat het laden klaar is. Daarna verandert de button en zie je ook als succes state de bookmark button een animatie meekrijgen. 
 Het cadeau is aan de lijst toegevoegt en kan daar bekeken worden. Je kan daarna het cadeau ook verwijderen en dan kan je zien dat die er niet meer staat.
+
 https://github.com/user-attachments/assets/6a6b7b96-d794-4ebb-bad8-d5ad994f4e53
 
 Empty State:
 
-![image](https://github.com/user-attachments/assets/55574a21-9846-48b0-823c-e3e54b90efef)
+<img src="https://github.com/user-attachments/assets/55574a21-9846-48b0-823c-e3e54b90efef" width=300/>
 
 
 ## Beschrijving
