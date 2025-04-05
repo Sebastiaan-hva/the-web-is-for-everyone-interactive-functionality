@@ -29,6 +29,12 @@ Empty State:
 
 <img src="https://github.com/user-attachments/assets/55574a21-9846-48b0-823c-e3e54b90efef" width=300/>
 
+Bij een foute link:
+
+![image](https://github.com/user-attachments/assets/f412b74c-1c83-4b8c-a212-9a8e35054e99)
+
+![image](https://github.com/user-attachments/assets/e6f600f6-554c-4d4d-b8d3-50d9e354641c)
+
 
 ## Beschrijving
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
