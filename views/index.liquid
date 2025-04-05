@@ -34,12 +34,12 @@
            
             {% if product.saved %}
                 <form method="POST" action="/savedgifts/{{ product.id }}" data-enhanced="form-{{ id }}">
-                    <button type="SUBMIT" class="grid-save"><img id="grid-save" src="/assets/saved-icon.png" alt="save button"> 
+                    <button type="SUBMIT" class="grid-save"><img id="grid-save" src="/assets/saved-icon.png" alt="{{ product.title }} unsave button"> 
                     {% comment %} <button type="SUBMIT" name="giftId" class="" aria-label="Remove from list" value="{{ product.id }}">-</button> {% endcomment %}
                 </form>
             {% else %}
                 <form method="POST" action="/savedgifts/{{ product.id }}" data-enhanced="form-{{ id }}">
-                     <button type="SUBMIT" class="grid-save"><img id="grid-save" src="/assets/save-icon.png" alt="save button"> 
+                     <button type="SUBMIT" class="grid-save"><img id="grid-save" src="/assets/save-icon.png" alt=" {{ product.title }} save button"> 
                     {% comment %} <button type="SUBMIT" class="" aria-label="Add to your List">+</button> {% endcomment %}
                 </form>
             {% endif %}

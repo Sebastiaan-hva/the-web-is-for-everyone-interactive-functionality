@@ -3,6 +3,7 @@ import express from 'express'
 import { Liquid } from 'liquidjs';
 
 const userID = 5
+ // dit is het id dat gekoppeld is aan mij in de database. 
 const app = express()
 
 app.use(express.urlencoded({extended: true}))
@@ -22,7 +23,6 @@ app.get('/', async function (request, response) {
   const savedProductsJSON = await fetch(`${savedProductsURL}?filter={"milledoni_users_id":${userID}}`);
   const saved_products = await savedProductsJSON.json();
   
-  // Ensure both API responses contain valid data
   if (!apiResponseJSON.data || !saved_products.data) {
     console.error("Error: API response missing data:", { apiResponseJSON, saved_products });
     return response.status(500).send("Internal Server Error: Missing API data.");
@@ -79,6 +79,8 @@ app.post('/savedgifts/:giftId', async function (request, response) {
   const idRes = await fetch(`${savedProductsURL}?filter={"milledoni_products_id":${request.params.giftId},"milledoni_users_id":${userID}}`); //Request paramsID
   const idJson = await idRes.json();
 
+  // post checked eerst met een if statement of er al iets in de database staat met hetzelfde ID. Als dat zo is dan wordt het verwijderdt.
+  // Als er dus niets met een een matchend ID in de database staat. Dan wordt er een product met dat ID toegevoegd aan Directus.
   console.log(idJson)
   if (idJson.data.length > 0) {
     const id = idJson.data[0].id;
@@ -95,6 +97,7 @@ app.post('/savedgifts/:giftId', async function (request, response) {
         body: JSON.stringify({
             milledoni_products_id: request.params.giftId,
             milledoni_users_id: 5
+            // dit is het id dat gekoppeld is aan mij in de database. 
         }),
         headers: {
             'Content-Type': 'application/json; charset=UTF-8'
@@ -143,6 +146,6 @@ app.post(…, async function (request, response) {
 })
 */
 
-// app.use((req, res, next) => {
-//   res.status(404).send("Sorry can't find that!")
-// })
+app.use((req, res, next) => {
+  res.status(404).send("Sorry can't find that!")
+})

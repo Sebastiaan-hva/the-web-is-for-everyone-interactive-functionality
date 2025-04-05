@@ -15,6 +15,7 @@
     </article>
     <section class="saved-list">
         <h2>My Saved Gifts</h2>
+        {% comment %} ik had hier dus iets met 'contains' kunnen doen ipv serverside checken. {% endcomment %}
             {% for product in savedGifts | compact %}
                 <article class="border">
                     <a href="/gifts/{{ product.productDetails.id }}"alt="{{ product.title }}">
