@@ -50,7 +50,9 @@ Bij een foute link:
 
 Als iemand naar een cadeau probeert te navigeren dat niet (meer) bestaat. Stel iemand heeft jou een tijdje geleden een cadeau gesetuurd wat nu niet meer op de site staat.
 
-## Code Voorbeelden
+Voor nog betere usability zou ik soort moeten toevoegen op de savedgift page waarmee je ook het meest recente cadeau bovenaan zou kunnen tonen voor als iemand heel veel cadeaus in een lijst heeft.
+
+## Code Voorbeelden (comments staan in de code :) ) 
 
 ### Posten
 
@@ -71,5 +73,22 @@ https://github.com/Sebastiaan-hva/the-web-is-for-everyone-interactive-functional
 -Installeer NodeJS in de console van de repo in je editor of in de command line van je folder met **NPM Install** (NPM I)
 
 -De laatste stap is de server lokaal starten met **NPM Start**
+
+
+## Bronnen
+
+https://github.com/fdnd-agency/milledoni/wiki/Design-Challenge
+
+https://liquidjs.com/tags/overview.html
+
+https://liquidjs.com/filters/overview.html
+
+https://expressjs.com/en/5x/api.html#app.post.method
+
+https://directus.io/docs/api/items#create-an-item
+
+[https://directus.io/docs/api/items#create-an-item
+
+](https://directus.io/docs/api/items#update-an-item)
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
