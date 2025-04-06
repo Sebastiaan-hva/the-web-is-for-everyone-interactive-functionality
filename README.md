@@ -20,16 +20,25 @@ En er ervoor gezorgt dat je cadeau's kan toevoegen doormiddelvan een POST en de 
 ## Mobile Desing / User  Story
 
 In dit filmpje laat ik zien hoe je cadeau's toevoegt. Hierin laat ik al bijna alle functionaliteit zien.
-Je kan POSTen naar de server en dan zie je de client-site loading state totdat het laden klaar is.
-Als het process klaar is zie je dat de button verandert naar een ingevulde bookmark en dat de bookmark button in de navigatie bovenin een navigatie meekrijgt.
-Het cadeau is aan de lijst toegevoegt en kan daar bekeken worden. Je kan daarna het cadeau ook verwijderen en dan kan je zien dat die er niet meer staat.
-Je ziet hier ook de ideal state waarin je een lijst getoont wordt waarin je alle producten kan terugvinden die je toegevoegt hebt.
 
 https://github.com/user-attachments/assets/6a6b7b96-d794-4ebb-bad8-d5ad994f4e53
+
+Je kan POSTen naar de server en dan zie je de client-site loading state totdat het laden klaar is. Hierdoor weet de gebruiker dat er iets gebeurt.
+
+Als het process klaar is zie je dat de button verandert naar een ingevulde bookmark en dat de bookmark button in de navigatie bovenin een navigatie meekrijgt. 
+De gebruiker weet dat waar zijn/haar toegevoegde cadeaus's staan.
+Het cadeau is aan de lijst toegevoegt en kan daar bekeken worden. Je kan daarna het cadeau ook verwijderen en dan kan je zien dat het cadeau er niet meer staat.
+
+Je ziet hier ook de ideal state waarin je een lijst getoont wordt waarin je alle producten kan terugvinden die je toegevoegt hebt.
+
+
 
 Empty State:
 
 <img src="https://github.com/user-attachments/assets/55574a21-9846-48b0-823c-e3e54b90efef" width=300/>
+
+Als er helemaal niets in het lijstje staat komt er dit te staan. In de toekomst zou ik hier nog een stappenplan kunnen neerzetten of een korte gif dat toont hoe je een cadeau toegoegt.
+
 
 Bij een foute link:
 
@@ -37,15 +46,13 @@ Bij een foute link:
 
 ![image](https://github.com/user-attachments/assets/e6f600f6-554c-4d4d-b8d3-50d9e354641c)
 
+Als iemand naar een cadeau probeert te navigeren dat niet (meer) bestaat. Stel iemand heeft jou een tijdje geleden een cadeau gesetuurd wat nu niet meer op de site staat.
 
 ## Code Voorbeelden
 
 ### Posten
 
 https://github.com/Sebastiaan-hva/the-web-is-for-everyone-interactive-functionality/blob/6653c2ffd5a9101727bfc693f3e7a869fd2564ed/server.js#L75-L111
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual of video toe 📸 -->
-<!-- Voeg een link toe naar GitHub Pages 🌐-->
 
 ### UI States
 
