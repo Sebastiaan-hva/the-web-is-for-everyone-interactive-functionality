@@ -64,6 +64,13 @@ https://github.com/Sebastiaan-hva/the-web-is-for-everyone-interactive-functional
 
 https://github.com/Sebastiaan-hva/the-web-is-for-everyone-interactive-functionality/blob/6653c2ffd5a9101727bfc693f3e7a869fd2564ed/views/index.liquid#L58-L117
 
+### Feature Detection // Progressive Enhancement
+
+Voor extra enhancements heb ik nu client side JS gebruikt die CSS classes meegeeft aan HTML elementen. Ik heb du feature detection / @supports nog niet toegepast op de leertaak. 
+Ik weet hier ook nog zo'n goede usecase.
+In de deeltaak heb ik het wel toegepast. 
+https://github.com/Sebastiaan-hva/progressive-enhancement
+
 ## Installatie
 
 -**Fork/Download** deze Repository.
